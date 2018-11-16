@@ -1,0 +1,25 @@
+server:
+  port: 8008
+spring:
+  application:
+    name: hall
+  datasource:
+    url: jdbc:mysql://localhost:3306/boxf?characterEncoding=utf8&useSSL=true&useOldAliasMetadataBehavior=true
+    username: root
+    password: aa123123
+    driver-class-name: com.mysql.jdbc.Driver
+  jpa:
+    database: mysql
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+      naming:
+        implicit-strategy: org.springframework.boot.orm.jpa.hibernate.SpringImplicitNamingStrategy
+        physical-strategy: org.springframework.boot.orm.jpa.hibernate.SpringPhysicalNamingStrategy
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://127.0.0.1:8080/eureka
+  instance:
+    hostname: 127.0.0.1
+    prefer-ip-address: true

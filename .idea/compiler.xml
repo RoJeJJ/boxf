@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="boxf-eureka" />
+        <module name="common" />
+        <module name="constant" />
+        <module name="gate" />
+        <module name="gate1" />
+        <module name="hall" />
+        <module name="model" />
+        <module name="proto-message" />
+        <module name="redis" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="zuul" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
